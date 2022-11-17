@@ -37,13 +37,13 @@
  @import 'layout/header';
  @import 'layout/profile';
  @import 'layout/message';
- @import 'layout/general'; 
+ @import 'layout/general';
 
  /* -------------------------------------------------------------- */
  /* 04. Features
 ----------------------------------------------------------------- */
 
- @import 'features/tabs'; 
+ @import 'features/tabs';
  @import 'features/stories';
  @import 'features/create-post';
  @import 'features/contacts';
@@ -65,7 +65,7 @@
 
 
  /* -------------------------------------------------------------- */
- /* 06. Add your custom classes 
+ /* 06. Add your custom classes
 ----------------------------------------------------------------- */
 
- @import '_custom';
+ @import 'custom';
