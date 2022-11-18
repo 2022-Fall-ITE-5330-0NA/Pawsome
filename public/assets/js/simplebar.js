@@ -2918,7 +2918,7 @@
            */
           this.connected_ = false;
           /**
-           * Tells that controller has subscribed for Mutation Events.
+           * Tells that controller has subscribed for Mutation Components.
            *
            * @private {boolean}
            */
