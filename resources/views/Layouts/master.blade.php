@@ -5,11 +5,13 @@
 </head>
 <body>
 @section('sidebar')
-    This is the master sidebar.
+    <x-side-bar></x-side-bar>
 @show
 
 <div class="container">
+    <x-top-bar></x-top-bar>
     @yield('content')
+    @yield('chat-box')
 </div>
 </body>
 </html>
