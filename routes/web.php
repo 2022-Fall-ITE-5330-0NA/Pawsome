@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::resource('events',\App\Http\Controllers\EventsController::class);
 Route::resource('feed',\App\Http\Controllers\FeedController::class);
+Route::resource('blogs',\App\Http\Controllers\BlogsController::class);
+Route::resource('account',\App\Http\Controllers\PersonalProfileController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
