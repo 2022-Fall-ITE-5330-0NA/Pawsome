@@ -13,7 +13,7 @@ class FeedController extends Controller
      */
     public function index()
     {
-        return view('Components.feed');
+        return view('Components.feed.feed');
     }
 
     /**

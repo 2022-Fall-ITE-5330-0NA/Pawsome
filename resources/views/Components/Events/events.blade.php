@@ -1,4 +1,4 @@
-@extends('layouts.master')
+@extends('Layouts.master')
 
     <!DOCTYPE html>
 <html lang="en">
@@ -37,9 +37,11 @@
         <div class="sidebar_inner" data-simplebar>
 
             <ul>
-                <li><a href="feed">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-blue-600">
-                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                <li><a href="/feed">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-blue-600">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
                         </svg>
                         <span> Feed </span> </a>
                 </li>
@@ -78,10 +80,14 @@
                 {{--                        </svg>  <span>  Games </span></a>--}}
                 {{--                </li>--}}
 
-                <li id="more-veiw" class="active" hidden><a href="events">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-yellow-500">
-                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                        </svg><span>  Events </span></a>
+                <li id="more-veiw" class="active" hidden><a href="/events">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-yellow-500">
+                            <path fill-rule="evenodd"
+                                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                        <span>  Events </span></a>
                 </li>
                 {{--                <li id="more-veiw" hidden><a href="products.html">--}}
                 {{--                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-red-500">--}}
@@ -94,10 +100,13 @@
                 {{--                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />--}}
                 {{--                        </svg>  <span>  Photos </span></a>--}}
                 {{--                </li>--}}
-                <li  ><a href="blogs">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-pink-500">
-                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
-                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                <li><a href="/blogs">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-pink-500">
+                            <path fill-rule="evenodd"
+                                  d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+                                  clip-rule="evenodd"/>
+                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"/>
                         </svg>
                         <span> Blog</span></a>
                 </li>
@@ -233,7 +242,7 @@
                     {{--                        </ul>--}}
                     {{--                    </nav>--}}
                 </div>
-                <a href="#"
+                <a href="/events/create"
                    class="flex items-center justify-center h-9 lg:px-5 px-2 rounded-md bg-blue-600 text-white space-x-1.5 absolute right-0">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5">
                         <path fill-rule="evenodd"
@@ -248,26 +257,27 @@
 
                 <div class="uk-slider-container px-1 py-3">
                     <ul class="uk-slider-items uk-child-width-1-4@m uk-child-width-1-3@s uk-grid-small uk-grid">
+     @foreach($events as $e )
                         <li>
                             <div class="card">
                                 <div class="card-media h-32">
                                     <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                    <div
-                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">
-                                        Happening now
-                                    </div>
+                                    <img src="/storage/events/{{$e->picture}}" alt="event-image" />
+{{--                                    <div--}}
+{{--                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">--}}
+{{--                                        Happening now--}}
+{{--                                    </div>--}}
                                 </div>
                                 <div class="card-body">
-                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>
-                                    <div class="text-sm font-medium mt-1">Ankara</div>
+{{--                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>--}}
+                                    <a href="timeline-event.html" class="box-title mb-1"> {{$e->name}} </a>
+                                    <div class="text-sm font-medium mt-1">{{$e->description}}</div>
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
                                     <div class="flex mt-2 space-x-2 text-sm">
                                         <a href="#"
@@ -279,7 +289,7 @@
                                                     d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
                                                 </path>
                                             </svg>
-                                            intersted
+                                            interested
                                         </a>
                                         <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -294,183 +304,184 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">
-                                    <div
-                                        class="absolute bg-blue-100 font-semibold px-2.5 py-1 rounded-full text-blue-500 text-xs top-2.5 left-2.5">
-                                        Upcomming
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-blue-500 font-semibold">Uk brands</div>
-                                    <a href="timeline-event.html" class="box-title  mb-1"> Safety and Flight </a>
-                                    <div class="text-sm font-medium mt-1">London</div>
+                        @endforeach
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">--}}
+{{--                                    <div--}}
+{{--                                        class="absolute bg-blue-100 font-semibold px-2.5 py-1 rounded-full text-blue-500 text-xs top-2.5 left-2.5">--}}
+{{--                                        Upcomming--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-blue-500 font-semibold">Uk brands</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title  mb-1"> Safety and Flight </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">London</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-green-500 font-semibold">Conference</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> Accept Who I Am</a>
-                                    <div class="text-sm font-medium mt-1">Dubai</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-green-500 font-semibold">Conference</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> Accept Who I Am</a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Dubai</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-yellow-500 font-semibold">Upcomming</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> Perspective is everything </a>
-                                    <div class="text-sm font-medium mt-1">Dubai</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-yellow-500 font-semibold">Upcomming</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> Perspective is everything </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Dubai</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                    <div
-                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">
-                                        Happening
-                                        now
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>
-                                    <div class="text-sm font-medium mt-1">Ankara</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">--}}
+{{--                                    <div--}}
+{{--                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">--}}
+{{--                                        Happening--}}
+{{--                                        now--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Ankara</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
                     </ul>
 
                     <a class="absolute bg-white top-16 flex items-center justify-center p-2 -left-4 rounded-full shadow-md text-xl w-9 z-10"
@@ -572,241 +583,241 @@
 
             <br>
 
-            <div class="my-4 flex items-center justify-between">
-                <div>
-                    <h2 class="text-xl font-semibold">Upcomming Events </h2>
-                </div>
-                {{--                <a href="#" class="text-blue-500"> See all </a>--}}
-            </div>
+{{--            <div class="my-4 flex items-center justify-between">--}}
+{{--                <div>--}}
+{{--                    <h2 class="text-xl font-semibold">Upcomming Events </h2>--}}
+{{--                </div>--}}
+{{--                --}}{{--                <a href="#" class="text-blue-500"> See all </a>--}}
+{{--            </div>--}}
 
-            <div class="relative" uk-slider="finite: true">
+{{--            <div class="relative" uk-slider="finite: true">--}}
 
-                <div class="uk-slider-container px-1 py-3">
-                    <ul class="uk-slider-items uk-child-width-1-4@m uk-child-width-1-3@s uk-grid-small uk-grid">
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>
-                                    <div class="text-sm font-medium mt-1">Ankara</div>
+{{--                <div class="uk-slider-container px-1 py-3">--}}
+{{--                    <ul class="uk-slider-items uk-child-width-1-4@m uk-child-width-1-3@s uk-grid-small uk-grid">--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Ankara</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-blue-500 font-semibold">Uk brands</div>
-                                    <a href="timeline-event.html" class="box-title  mb-1"> Safety and Flight </a>
-                                    <div class="text-sm font-medium mt-1">London</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-blue-500 font-semibold">Uk brands</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title  mb-1"> Safety and Flight </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">London</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-green-500 font-semibold">Conference</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> Accept Who I Am</a>
-                                    <div class="text-sm font-medium mt-1">Dubai</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-green-500 font-semibold">Conference</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> Accept Who I Am</a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Dubai</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-yellow-500 font-semibold">Upcomming</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> Perspective is everything </a>
-                                    <div class="text-sm font-medium mt-1">Dubai</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-4.jpg" alt="" class="">--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-yellow-500 font-semibold">Upcomming</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> Perspective is everything </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Dubai</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="card">
-                                <div class="card-media h-32">
-                                    <div class="card-media-overly"></div>
-                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">
-                                    <div
-                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">
-                                        Happening
-                                        now
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>
-                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>
-                                    <div class="text-sm font-medium mt-1">Ankara</div>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <div class="card">--}}
+{{--                                <div class="card-media h-32">--}}
+{{--                                    <div class="card-media-overly"></div>--}}
+{{--                                    <img src="../../../public/assets/images/events/img-2.jpg" alt="" class="">--}}
+{{--                                    <div--}}
+{{--                                        class="absolute bg-red-100 font-semibold px-2.5 py-1 rounded-full text-red-500 text-xs top-2.5 left-2.5">--}}
+{{--                                        Happening--}}
+{{--                                        now--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <div class="text-xs uppercase text-red-500 font-semibold"> Happening now</div>--}}
+{{--                                    <a href="timeline-event.html" class="box-title mb-1"> The global creative </a>--}}
+{{--                                    <div class="text-sm font-medium mt-1">Ankara</div>--}}
 
-                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">
-                                        <div> 15 intersted</div>
-                                        <div>·</div>
-                                        <div> 2 going</div>
-                                    </div>
+{{--                                    <div class="flex items-center space-x-2 text-sm text-gray-500 capitalize">--}}
+{{--                                        <div> 15 intersted</div>--}}
+{{--                                        <div>·</div>--}}
+{{--                                        <div> 2 going</div>--}}
+{{--                                    </div>--}}
 
-                                    <div class="flex mt-2 space-x-2 text-sm">
-                                        <a href="#"
-                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                                 fill="currentColor"
-                                                 class="w-5 mr-1.5">
-                                                <path
-                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
-                                                </path>
-                                            </svg>
-                                            intersted
-                                        </a>
-                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                                 stroke="currentColor" class="w-5">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                                </path>
-                                            </svg>
-                                        </a>
-                                    </div>
+{{--                                    <div class="flex mt-2 space-x-2 text-sm">--}}
+{{--                                        <a href="#"--}}
+{{--                                           class="bg-blue-600 flex flex-1 h-8 items-center justify-center rounded-md text-white capitalize">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"--}}
+{{--                                                 fill="currentColor"--}}
+{{--                                                 class="w-5 mr-1.5">--}}
+{{--                                                <path--}}
+{{--                                                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            intersted--}}
+{{--                                        </a>--}}
+{{--                                        <a href="#" class="bg-gray-200 flex h-8 items-center px-3 rounded-md">--}}
+{{--                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"--}}
+{{--                                                 stroke="currentColor" class="w-5">--}}
+{{--                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                                                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">--}}
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                        </a>--}}
+{{--                                    </div>--}}
 
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
 
-                    <a class="absolute bg-white top-16 flex items-center justify-center p-2 -left-4 rounded-full shadow-md text-xl w-9 z-10"
-                       href="#" uk-slider-item="previous"> <i class="icon-feather-chevron-left"></i></a>
-                    <a class="absolute bg-white top-16 flex items-center justify-center p-2 -right-4 rounded-full shadow-md text-xl w-9 z-10"
-                       href="#" uk-slider-item="next"> <i class="icon-feather-chevron-right"></i></a>
+{{--                    <a class="absolute bg-white top-16 flex items-center justify-center p-2 -left-4 rounded-full shadow-md text-xl w-9 z-10"--}}
+{{--                       href="#" uk-slider-item="previous"> <i class="icon-feather-chevron-left"></i></a>--}}
+{{--                    <a class="absolute bg-white top-16 flex items-center justify-center p-2 -right-4 rounded-full shadow-md text-xl w-9 z-10"--}}
+{{--                       href="#" uk-slider-item="next"> <i class="icon-feather-chevron-right"></i></a>--}}
 
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
 
 
         </div>

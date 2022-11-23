@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('event');
+            $table->string('name');
             $table->string('description');
             $table->string('picture');
             $table->string('author_id');
-            $table->string('interested_count');
+
             $table->timestamps();
         });
     }

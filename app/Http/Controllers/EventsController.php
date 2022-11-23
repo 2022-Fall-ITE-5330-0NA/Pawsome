@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Events;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
@@ -13,7 +14,8 @@ class EventsController extends Controller
      */
     public function index()
     {
-        return view('Components.events');
+        $events=Events::all();
+        return view('Components.Events.events', ['events'=>$events]);
     }
 
     /**
@@ -23,7 +25,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        //
+        return view('Components.Events.create-event');
     }
 
     /**
@@ -34,7 +36,26 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        if($request->hasFile('picture')){
+            $request->validate([
+                'image' =>'mimes:jpeg,bmp,png'
+            ]);
+
+            $request->picture->store('events','public');
+
+            $event = new Events([
+                'name' => $request->get('name'),
+                'description' =>$request->get('description'),
+                'author_id' => $request->get('author_id'),
+                'picture' => $request->picture->hashName()
+
+            ]);
+
+            $event->save();
+        }
+
+        return redirect('/events');
     }
 
     /**
@@ -45,7 +66,7 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**

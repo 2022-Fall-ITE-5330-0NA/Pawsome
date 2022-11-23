@@ -1,6 +1,6 @@
-@extends('layouts.master')
+@extends('Layouts.master')
 
-    <!DOCTYPE html>
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,8 +30,6 @@
 <body>
 
 
-
-
 <div id="wrapper">
 
     <div class="sidebar">
@@ -40,8 +38,9 @@
 
             <ul>
                 <li class="active"><a href="feed">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-blue-600">
-                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-blue-600">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
                         </svg>
                         <span> Feed </span> </a>
                 </li>
@@ -80,10 +79,14 @@
                 {{--                    </svg>  <span>  Games </span></a>--}}
                 {{--            </li>--}}
 
-                <li ><a href="events">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-yellow-500">
-                            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
-                        </svg><span>  Events </span></a>
+                <li><a href="events">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-yellow-500">
+                            <path fill-rule="evenodd"
+                                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                        <span>  Events </span></a>
                 </li>
                 {{--            <li id="more-veiw" hidden><a href="products.html">--}}
                 {{--                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-red-500">--}}
@@ -96,10 +99,13 @@
                 {{--                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />--}}
                 {{--                    </svg>  <span>  Photos </span></a>--}}
                 {{--            </li>--}}
-                <li ><a href="blogs">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-pink-500">
-                            <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd" />
-                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z" />
+                <li><a href="blogs">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                             class="text-pink-500">
+                            <path fill-rule="evenodd"
+                                  d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z"
+                                  clip-rule="evenodd"/>
+                            <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"/>
                         </svg>
                         <span> Blog</span></a>
                 </li>
@@ -281,9 +287,9 @@
                         <div class="grid grid-flow-col pt-3 -mx-1 -mb-1 font-semibold text-sm">
                             <div class="hover:bg-gray-100 flex items-center p-1.5 rounded-md cursor-pointer">
                                 <svg
-                                    class="bg-blue-100 h-9 mr-2 p-1.5 rounded-full text-blue-600 w-9 -my-0.5 hidden lg:block"
-                                    data-tippy-placement="top" title="Tooltip" fill="none" stroke="currentColor"
-                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        class="bg-blue-100 h-9 mr-2 p-1.5 rounded-full text-blue-600 w-9 -my-0.5 hidden lg:block"
+                                        data-tippy-placement="top" title="Tooltip" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                 </svg>
@@ -291,10 +297,10 @@
                             </div>
                             <div class="hover:bg-gray-100 flex items-center p-1.5 rounded-md cursor-pointer">
                                 <svg
-                                    class="bg-green-100 h-9 mr-2 p-1.5 rounded-full text-green-600 w-9 -my-0.5 hidden lg:block"
-                                    uk-tooltip="title: Messages ; pos: bottom ;offset:7" fill="none"
-                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                    title="" aria-expanded="false">
+                                        class="bg-green-100 h-9 mr-2 p-1.5 rounded-full text-green-600 w-9 -my-0.5 hidden lg:block"
+                                        uk-tooltip="title: Messages ; pos: bottom ;offset:7" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                        title="" aria-expanded="false">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
                                 </svg>
@@ -325,11 +331,11 @@
                             </div>
                             <div>
                                 <a href="#"> <i
-                                        class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
+                                            class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
                                 </a>
                                 <div
-                                    class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
-                                    uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
+                                        class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
+                                        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
 
                                     <ul class="space-y-1">
                                         <li>
@@ -387,7 +393,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                                                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
                                         </svg>
                                     </div>
                                     <div> Like</div>
@@ -408,7 +414,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                                                    d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
                                         </svg>
                                     </div>
                                     <div> Share</div>
@@ -436,13 +442,13 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12 ">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12 ">
                                             <p class="leading-6">In ut odio libero vulputate
                                                 <urna class="i uil-heart"></urna>
                                                 <i
-                                                    class="uil-grin-tongue-wink"> </i></p>
+                                                        class="uil-grin-tongue-wink"> </i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-sm flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -458,12 +464,12 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12 ">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12 ">
                                             <p class="leading-6"> sed diam nonummy nibh euismod tincidunt ut laoreet
                                                 dolore magna aliquam erat volutpat. David !<i
-                                                    class="uil-grin-tongue-wink-alt"></i></p>
+                                                        class="uil-grin-tongue-wink-alt"></i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-xs flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -518,11 +524,11 @@
                             </div>
                             <div>
                                 <a href="#"> <i
-                                        class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
+                                            class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
                                 </a>
                                 <div
-                                    class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
-                                    uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
+                                        class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
+                                        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
 
                                     <ul class="space-y-1">
                                         <li>
@@ -578,7 +584,7 @@
                                 <a href="assets/images/post/img-4.jpg" class="relative">
                                     <img src="assets/images/post/img-3.jpg" alt="" class="rounded-md w-full h-full">
                                     <div
-                                        class="absolute bg-gray-900 bg-opacity-30 flex justify-center items-center text-white rounded-md inset-0 text-2xl">
+                                            class="absolute bg-gray-900 bg-opacity-30 flex justify-center items-center text-white rounded-md inset-0 text-2xl">
                                         + 15 more
                                     </div>
                                 </a>
@@ -594,7 +600,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                                                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
                                         </svg>
                                     </div>
                                     <div> Like</div>
@@ -615,7 +621,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                                                    d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
                                         </svg>
                                     </div>
                                     <div> Share</div>
@@ -643,13 +649,13 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6">In ut odio libero vulputate
                                                 <urna class="i uil-heart"></urna>
                                                 <i
-                                                    class="uil-grin-tongue-wink"> </i></p>
+                                                        class="uil-grin-tongue-wink"> </i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-sm flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -665,12 +671,12 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6"> sed diam nonummy nibh euismod tincidunt ut laoreet
                                                 dolore magna aliquam erat volutpat. David !<i
-                                                    class="uil-grin-tongue-wink-alt"></i></p>
+                                                        class="uil-grin-tongue-wink-alt"></i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-xs flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -725,11 +731,11 @@
                             </div>
                             <div>
                                 <a href="#"> <i
-                                        class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
+                                            class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
                                 </a>
                                 <div
-                                    class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
-                                    uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
+                                        class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
+                                        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
 
                                     <ul class="space-y-1">
                                         <li>
@@ -789,7 +795,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                                                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
                                         </svg>
                                     </div>
                                     <div> Like</div>
@@ -810,7 +816,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                                                    d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
                                         </svg>
                                     </div>
                                     <div> Share</div>
@@ -838,13 +844,13 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6">In ut odio libero vulputate
                                                 <urna class="i uil-heart"></urna>
                                                 <i
-                                                    class="uil-grin-tongue-wink"> </i></p>
+                                                        class="uil-grin-tongue-wink"> </i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-sm flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -860,12 +866,12 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6"> sed diam nonummy nibh euismod tincidunt ut laoreet
                                                 dolore magna aliquam erat volutpat. David !<i
-                                                    class="uil-grin-tongue-wink-alt"></i></p>
+                                                        class="uil-grin-tongue-wink-alt"></i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-xs flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -920,11 +926,11 @@
                             </div>
                             <div>
                                 <a href="#"> <i
-                                        class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
+                                            class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1"></i>
                                 </a>
                                 <div
-                                    class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
-                                    uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
+                                        class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden text-base border border-gray-100"
+                                        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small">
 
                                     <ul class="space-y-1">
                                         <li>
@@ -980,7 +986,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                                                    d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
                                         </svg>
                                     </div>
                                     <div> Like</div>
@@ -1001,7 +1007,7 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                                              width="22" height="22" class="dark:text-gray-100">
                                             <path
-                                                d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
+                                                    d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z"/>
                                         </svg>
                                     </div>
                                     <div> Share</div>
@@ -1029,13 +1035,13 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6">In ut odio libero vulputate
                                                 <urna class="i uil-heart"></urna>
                                                 <i
-                                                    class="uil-grin-tongue-wink"> </i></p>
+                                                        class="uil-grin-tongue-wink"> </i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-sm flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -1051,12 +1057,12 @@
                                     </div>
                                     <div>
                                         <div
-                                            class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
+                                                class="text-gray-700 py-2 px-3 rounded-md bg-gray-100 relative lg:ml-5 ml-2 lg:mr-12">
                                             <p class="leading-6"> sed diam nonummy nibh euismod tincidunt ut laoreet
                                                 dolore magna aliquam erat volutpat. David !<i
-                                                    class="uil-grin-tongue-wink-alt"></i></p>
+                                                        class="uil-grin-tongue-wink-alt"></i></p>
                                             <div
-                                                class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
+                                                    class="absolute w-3 h-3 top-3 -left-1 bg-gray-100 transform rotate-45"></div>
                                         </div>
                                         <div class="text-xs flex items-center space-x-3 mt-2 ml-5">
                                             <a href="#" class="text-red-600"> <i class="uil-heart"></i> Love </a>
@@ -1360,8 +1366,8 @@
                     <ion-icon name="ellipsis-vertical" class="text-xl hover:bg-gray-100 p-1 rounded-full"></ion-icon>
                 </a>
                 <div
-                    class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden border border-gray-100"
-                    uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small; offset:5">
+                        class="bg-white w-56 shadow-md mx-auto p-2 mt-12 rounded-md text-gray-500 hidden border border-gray-100"
+                        uk-drop="mode: click;pos: bottom-right;animation: uk-animation-slide-bottom-small; offset:5">
                     <ul class="space-y-1">
                         <li>
                             <a href="#"
@@ -1401,8 +1407,8 @@
         </div>
 
         <div
-            class="absolute bg-white z-10 w-full -mt-5 lg:-mt-2 transform translate-y-1.5 py-2 border-b items-center flex"
-            id="search" hidden>
+                class="absolute bg-white z-10 w-full -mt-5 lg:-mt-2 transform translate-y-1.5 py-2 border-b items-center flex"
+                id="search" hidden>
             <input type="text" placeholder="Search.." class="flex-1">
             <ion-icon name="close-outline" class="text-2xl hover:bg-gray-100 p-1 rounded-full mr-4 cursor-pointer"
                       uk-toggle="target: #search;animation: uk-animation-slide-top-small"></ion-icon>
@@ -1746,7 +1752,7 @@
 <!-- Craete post modal -->
 <div id="create-post-modal" class="create-post is-story" uk-modal>
     <div
-        class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded-lg p-0 lg:w-5/12 relative shadow-2xl uk-animation-slide-bottom-small">
+            class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded-lg p-0 lg:w-5/12 relative shadow-2xl uk-animation-slide-bottom-small">
 
         <div class="text-center py-3 border-b">
             <h3 class="text-lg font-semibold"> Create Post </h3>
@@ -1758,9 +1764,9 @@
                  class="bg-gray-200 border border-white rounded-full w-11 h-11">
             <div class="flex-1 pt-2">
                     <textarea
-                        class="uk-textare text-black shadow-none focus:shadow-none text-xl font-medium resize-none"
-                        rows="5"
-                        placeholder="What's Your Mind ? Stella!"></textarea>
+                            class="uk-textare text-black shadow-none focus:shadow-none text-xl font-medium resize-none"
+                            rows="5"
+                            placeholder="What's Your Mind ? Stella!"></textarea>
             </div>
 
         </div>
@@ -1779,44 +1785,44 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                               d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
                     </svg>
-                    <svg class="text-green-600 h-9 p-1.5 rounded-full bg-green-100 w-9 cursor-pointer" fill="none"
-                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
-                    </svg>
-                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" fill="none"
-                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" id="veiw-more"
-                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                    </svg>
-                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" id="veiw-more"
-                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
-                    </svg>
-                    <svg class="text-purple-600 h-9 p-1.5 rounded-full bg-purple-100 w-9 cursor-pointer" id="veiw-more"
-                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
-                    </svg>
+{{--                    <svg class="text-green-600 h-9 p-1.5 rounded-full bg-green-100 w-9 cursor-pointer" fill="none"--}}
+{{--                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>--}}
+{{--                    </svg>--}}
+{{--                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" fill="none"--}}
+{{--                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>--}}
+{{--                    </svg>--}}
+{{--                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" id="veiw-more"--}}
+{{--                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"--}}
+{{--                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>--}}
+{{--                    </svg>--}}
+{{--                    <svg class="text-pink-600 h-9 p-1.5 rounded-full bg-pink-100 w-9 cursor-pointer" id="veiw-more"--}}
+{{--                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"--}}
+{{--                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>--}}
+{{--                    </svg>--}}
+{{--                    <svg class="text-purple-600 h-9 p-1.5 rounded-full bg-purple-100 w-9 cursor-pointer" id="veiw-more"--}}
+{{--                         hidden fill="none" stroke="currentColor" viewBox="0 0 24 24"--}}
+{{--                         xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>--}}
+{{--                    </svg>--}}
 
-                    <!-- view more -->
-                    <svg class="hover:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer" id="veiw-more"
-                         uk-toggle="target: #veiw-more; animation: uk-animation-fade" fill="none" stroke="currentColor"
-                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>
-                    </svg>
+{{--                    <!-- view more -->--}}
+{{--                    <svg class="hover:bg-gray-200 h-9 p-1.5 rounded-full w-9 cursor-pointer" id="veiw-more"--}}
+{{--                         uk-toggle="target: #veiw-more; animation: uk-animation-fade" fill="none" stroke="currentColor"--}}
+{{--                         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"--}}
+{{--                              d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path>--}}
+{{--                    </svg>--}}
 
                 </div>
             </div>

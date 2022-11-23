@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class Events extends Model
+class Blogs extends \Illuminate\Database\Eloquent\Model
 {
     use HasFactory;
     protected $fillable = ['name','picture', 'description','author_id'];
