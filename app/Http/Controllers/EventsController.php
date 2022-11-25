@@ -89,7 +89,8 @@ class EventsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $event = Events::find($id);
+        return view('Components.events.update-event',['event'=>$event]);
     }
 
     /**
@@ -100,6 +101,7 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $event = Events::find($id)->delete();
+        return redirect('/events');
     }
 }

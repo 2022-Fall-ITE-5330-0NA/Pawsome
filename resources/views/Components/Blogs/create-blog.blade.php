@@ -36,7 +36,7 @@
         <div class="sidebar_inner" data-simplebar>
 
             <ul>
-                <li><a href="feed">
+                <li><a href="/feed">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                              class="text-blue-600">
                             <path
@@ -79,7 +79,7 @@
                 {{--                        </svg>  <span>  Games </span></a>--}}
                 {{--                </li>--}}
 
-                <li id="more-veiw" class="active" hidden><a href="events">
+                <li id="more-veiw" class="active" hidden><a href="/events">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                              class="text-yellow-500">
                             <path fill-rule="evenodd"
@@ -99,7 +99,7 @@
                 {{--                            <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd" />--}}
                 {{--                        </svg>  <span>  Photos </span></a>--}}
                 {{--                </li>--}}
-                <li><a href="blogs">
+                <li><a href="/blogs">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
                              class="text-pink-500">
                             <path fill-rule="evenodd"

@@ -23,7 +23,7 @@ class BlogsController extends Controller
      */
     public function create()
     {
-        //
+        return view('components.blogs.create-blog');
     }
 
     /**
@@ -79,6 +79,6 @@ class BlogsController extends Controller
      */
     public function destroy($id)
     {
-        //
+
     }
 }

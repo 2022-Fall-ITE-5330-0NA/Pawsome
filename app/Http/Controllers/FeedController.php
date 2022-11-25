@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Feeds;
 use Illuminate\Http\Request;
 
 class FeedController extends Controller
@@ -13,7 +14,8 @@ class FeedController extends Controller
      */
     public function index()
     {
-        return view('Components.feed.feed');
+        $feed = Feeds::all();
+        return view('Components.Feed.feed', ['feed'=>$feed]);
     }
 
     /**
@@ -34,7 +36,24 @@ class FeedController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        if($request->hasFile('picture')){
+            $request->validate([
+                'image' =>'mimes:jpeg,bmp,png'
+            ]);
+
+            $request->picture->store('feed','public');
+
+            $feed = new Feeds([
+                'author_id' => $request->get('author_id'),
+                'description' =>$request->get('description'),
+                'picture' => $request->picture->hashName()
+
+            ]);
+
+            $feed->save();
+        }
+
+        return redirect('/feed');
     }
 
     /**
@@ -79,6 +98,7 @@ class FeedController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Feeds::find($id)->delete();
+        return redirect('/feed');
     }
 }
